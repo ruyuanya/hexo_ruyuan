@@ -1204,10 +1204,15 @@ inject:
   head:
     # - <link rel="stylesheet" href="/xxx.css">
     - <link rel="stylesheet" href="/css/font.css">
+    - <link rel="stylesheet" href="/css/custom.css">
   bottom:
     # - <script src="xxxx"></script>
     - <div class="aplayer no-destroy" data-id="60198" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true"> </div>
     - <script src="/js/ruyuan.js"></script>
+    - <script defer src="/js/cursor.js"></script>
+    - <script defer type="text/javascript" src="https://cdn1.tianli0.top/npm/sweetalert2@8.19.0/dist/sweetalert2.all.js"></script> # 节日弹窗依赖
+    - <script defer src="/js/lunar.js"></script> # 农历计算
+    - <script defer src="/js/day.js"></script> # 节日弹窗
 
 # CDN 设置
 # 除非你知道它们的工作原理，否则不要修改以下设置

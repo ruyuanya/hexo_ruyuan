@@ -17,5 +17,5 @@ window.addEventListener('focus', function () {
     }
     timeout = setTimeout(() => {
         document.title = defaultTitle; // 恢复默认标题
-    }, 2000); // 2秒后
+    }, 1500); // 2秒后
 });
