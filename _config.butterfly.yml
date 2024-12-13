@@ -57,7 +57,7 @@ social:
 # --------------------------------------
 
 # 网站的 favicon 图标
-favicon: /img/favicon.png
+favicon: /images/logo.png
 
 # 头像设置
 avatar:
@@ -110,7 +110,7 @@ cover:
   archives_enable: true
   # 主页封面的位置
   # 选择: left/right/both
-  # position: both
+  position: both
   # 当未设置封面时，显示默认封面
   default_cover:
     # - /images/nxd.png
@@ -256,10 +256,10 @@ reward:
 # 轻松在线浏览和编辑博客源代码
 post_edit:
   # 是否启用在线编辑
-  enable: false
+  enable: true
   # url: https://github.com/用户名/仓库名/edit/分支名/子目录名/
   # 例如: https://github.com/jerryc127/butterfly.js.org/edit/main/source/
-  url:
+  url: https://github.com/ruyuanya/hexo_ruyuan.git
 
 # 相关文章
 related_post:
@@ -1207,6 +1207,7 @@ inject:
   bottom:
     # - <script src="xxxx"></script>
     - <div class="aplayer no-destroy" data-id="60198" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true"> </div>
+    - <script src="/js/ruyuan.js"></script>
 
 # CDN 设置
 # 除非你知道它们的工作原理，否则不要修改以下设置
