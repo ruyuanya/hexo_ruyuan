@@ -159,13 +159,7 @@ pnpm config set registry https://registry.npmmirror.com && pnpm install -P
 
 全程无报错算安装成功
 
-::: warning 注意
-
-注意出现`"run script"`的时候，等待时间久为正常现象，请慢慢等~
-
-:::
-
-## 4.启动！
+## 4.启动
 
 ```bash
 node app
@@ -273,3 +267,19 @@ curl -# https://h.winterqkl.cn/ICQQ/parser.js -o node_modules/icqq/lib/message/p
 还是有问题？真拿你没办法呢，主页有我的QQ，也可以[进群找我](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=-Gn9UsYoNE2WZgFV_N3ywFznDBnj3bYE&authKey=1Ue6TbbbwsG%2F0mzn%2FJeAk8cE83Zl8Ejd2tRYuY%2B92FpkDdDF00%2FmtzN9u%2F0YQkaF&noverify=0&group_code=229223800)
 
 ![截图](/images/Miao-Yunzai/截图.gif)
+
+<script>
+  new Vue({
+    data: function () {
+        this.$notify({
+            title: "提醒！",
+            message: "本页面搭建仅供参考，请勿发布在各大流量平台以及评论留言！😜",
+            position: 'top-left',
+            offset: 50,
+            showClose: true,
+            type: "warning",
+            duration: 5000
+        });
+    }
+})
+</script>

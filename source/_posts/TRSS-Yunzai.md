@@ -130,3 +130,19 @@ pnpm run log
 # 后台停止
 pnpm run stop
 ```
+
+<script>
+  new Vue({
+    data: function () {
+        this.$notify({
+            title: "提醒！",
+            message: "本页面搭建仅供参考，请勿发布在各大流量平台以及评论留言！😜",
+            position: 'top-left',
+            offset: 50,
+            showClose: true,
+            type: "warning",
+            duration: 5000
+        });
+    }
+})
+</script>
