@@ -451,7 +451,7 @@ darkmode:
   # autoChangeMode: 1  跟随系统设置，如果系统不支持暗黑模式，则在晚上 6 点到早上 6 点之间切换暗黑模式
   # autoChangeMode: 2  在晚上 6 点到早上 6 点之间切换暗黑模式
   # autoChangeMode: false  不自动切换
-  autoChangeMode: 1
+  autoChangeMode: false
   # 设置明亮模式时间，值在 0 到 24 之间。如果未设置，默认值为 6 和 18
   start: 8
   end: 22
@@ -945,7 +945,7 @@ hr_icon:
   # 是否启用分隔符图标
   enable: true
   # Font Awesome 图标的 unicode 值，如 '\3423'
-  icon: '\3423'
+  icon: '\f5e4'
   icon-top: -10px
 
 # 打字机效果
@@ -989,7 +989,7 @@ canvas_fluttering_ribbon:
 # https://github.com/hustcc/canvas-nest.js
 canvas_nest:
   # 是否启用 canvas_nest
-  enable: true
+  enable: false
   # 线条颜色，默认: '0,0,0'; RGB 值: (R,G,B).(注意: 使用 ',' 分隔.)
   color: "0,0,255"
   # 线条的不透明度 (0~1)
@@ -1206,19 +1206,19 @@ inject:
     - <link rel="stylesheet" href="/css/font.css">
     - <link rel="stylesheet" href="/css/custom.css">
     - <link rel="stylesheet" href="https://cdn1.tianli0.top/npm/element-ui@2.15.6/packages/theme-chalk/lib/index.css"> # 引入组件库(f12)
-    - <script src="https://cdn.staticfile.org/jquery/3.6.3/jquery.min.js"></script> # jQuery
-    - <script async data-pjax src="/js/txmap.js"></script> # 腾讯位置API
   bottom:
     # - <script src="xxxx"></script>
-    - <div class="aplayer no-destroy" data-id="8253857848" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true" data-lrcType="-1"> </div>
-    - <script src="/js/ruyuan.js"></script>
+    - <div class="aplayer no-destroy" data-id="8253857848" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="false" data-lrcType="-1"> </div>
     - <script defer src="/js/cursor.js"></script>
     - <script defer type="text/javascript" src="https://cdn1.tianli0.top/npm/sweetalert2@8.19.0/dist/sweetalert2.all.js"></script> # 节日弹窗依赖
     - <script defer src="/js/lunar.js"></script> # 农历计算
     - <script defer src="/js/day.js"></script> # 节日弹窗
-    - <script async src="https://cdn1.tianli0.top/npm/vue@2.6.14/dist/vue.min.js"></script> # 引入VUE(f12)
+    - <script async src="https://cdn1.tianli0.top/npm/vue@2.6.14/dist/vue.min.js"></script> # 引入VU
     - <script async src="https://cdn1.tianli0.top/npm/element-ui@2.15.6/lib/index.js"></script> # 引入ElementUI(f12)
-    - <script src="/js/sun_moon.js" async></script> # 夜间模式切换
+    - <script defer src="/js/ruyuan.js"></script>
+    - <script src="https://cdn.staticfile.org/jquery/3.6.3/jquery.min.js"></script> # jQuery
+    - <script async data-pjax src="/js/txmap.js"></script> # 腾讯位置API
+    # - <script src="/js/sun_moon.js" async></script> # 夜间模式切换
 
 # CDN 设置
 # 除非你知道它们的工作原理，否则不要修改以下设置
