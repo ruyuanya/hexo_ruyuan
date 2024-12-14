@@ -4,7 +4,7 @@ let timeout;
 
 // 当用户离开窗口时
 window.addEventListener('blur', function () {
-    document.title = "别走啊~"; // 修改为离开时的标题
+    document.title = "别走呀~"; // 修改为离开时的标题
 });
 
 // 当用户回到窗口时
@@ -45,6 +45,27 @@ document.addEventListener("copy", function () {
         })
     }, 300)
 })
+
+// f12提醒但不禁用
+document.onkeydown = function (e) {
+    if (123 == e.keyCode || (e.ctrlKey && e.shiftKey && (74 === e.keyCode || 73 === e.keyCode || 67 === e.keyCode)) || (e.ctrlKey && 85 === e.keyCode)) {
+      debounce(function () {
+        new Vue({
+          data: function () {
+            this.$notify({
+              title: "你已被发现😜",
+              message: "小伙子，扒源记住要遵循GPL协议！",
+              position: 'top-left',
+              offset: 50,
+              showClose: true,
+              type: "warning",
+              duration: 5000
+            });
+          }
+        })
+      }, 300);
+    }
+  };
 
 /* 夜间动画切换 */
 function activateDarkMode() {

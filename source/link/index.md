@@ -7,4 +7,4 @@ cover: /images/nxd2.jpg
 
 # 友情链接
 
-还在想呢...
+唔，很快写！

@@ -106,7 +106,7 @@ deploy:
   branch: main
 
 # 本地搜索
-search:
-  path: search.xml
-  field: post
-  content: true
+# search:
+#  path: search.xml
+#  field: post
+#  content: true
