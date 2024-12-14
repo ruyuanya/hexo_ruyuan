@@ -1219,7 +1219,6 @@ inject:
     - <script defer src="/js/ruyuan.js" async></script>
     - <script type="text/javascript" src="https://unpkg.zhimg.com/jquery@latest/dist/jquery.min.js"></script> # jQuery
     - <script async data-pjax src="/js/txmap.js"></script> # 腾讯位置API
-    - <script src="/js/sakura.js"></script> # 樱花
     - <canvas id="universe"></canvas>
     - <script defer src="/js/universe.js"></script> # 星空
 
